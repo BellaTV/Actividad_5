@@ -2,7 +2,6 @@ import ilustrationHero from '../assets/images/illustration-hero.svg'
 import iconMusic from '../assets/images/icon-music.svg'
 import Button from './Button';
 
-import './card.css'
 
 const Card = () => {
     return (

@@ -1,3 +1,5 @@
+@import './variables';
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,9 +12,9 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    font-family: 'Red Hat Display', sans-serif;
-    background-color: hsl(225, 100%, 94%);
-    background-image: url('../assets/images/pattern-background-desktop.svg');
+    font-family: $font-family;
+    background-color: $primary-bg-color;
+    background-image: $background-image;
     background-repeat: no-repeat;
     background-size:contain;
     background-position: initial;
@@ -37,7 +39,7 @@
             flex-direction: column;
             align-items: center;
             padding: 0 35px 35px 35px;
-            background-color: #fff;
+            background-color:$secondary-bg-color;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -63,23 +65,23 @@
             }
             
             h1 {
-                color: #1F2F56; 
+                color:$primary-text-color; 
                 padding: 15px;
-                font-size: 24px;
-                font-weight: 900;
+                font-size: $font-size-large;
+                font-weight: $font-weight-black;
             }
 
             p {
-                font-size: 16px;
-                font-weight: 500;
+                font-size: $font-size-medium;
+                font-weight: $font-weight-regular;
                 margin: 5px;
-                color: hsl(224, 23%, 55%);
+                color: $secondary-text-color;
             }
 
             .plan {
                 display: flex;
                 align-items: center;
-                background-color: hsl(225, 100%, 98%);
+                background-color:$tertiary-bg-color;
                 padding: 20px;
                 margin: 10px 0;
                 border-radius: 10px;
@@ -100,15 +102,15 @@
                     
 
                     span:first-child {
-                        font-weight: 900;
+                        font-weight: $font-weight-black;
                         margin-right: auto;
                         margin-bottom: 2px;
                     }
 
                     span:last-child {
-                        font-weight: 500;
+                        font-weight: $font-weight-regular;
                         margin-right: auto;
-                        color: hsl(224, 23%, 55%)
+                        color: $secondary-text-color;
                     }
                 }
             }
@@ -122,26 +124,26 @@
                 cursor: pointer;
                 outline: inherit;
                 margin: 10px 0;
-                font-weight: 700;
+                font-weight: $font-weight-bold;
                 
 
                 &.btnpay {
                     padding: 10px;
                     color: white;
-                    background-color: hsl(245, 75%, 52%);
+                    background-color: $primary-button-color ;
                     border-radius: 10px;
                     width: 100%;
                     box-shadow: 0 15px 8px rgba(37, 27, 222, 0.137) ;
-                    font-size: 14px;
+                    font-size: $font-size-small;
             
                     &:hover {
-                        background-color:  hsla(245, 75%, 52%, 0.67);;
+                        background-color:  $primary-button-hover;
                     }
                 }
 
                     &.cancel{
-                        color: hsl(224, 23%, 55%);
-                        font-size: 14px;
+                        color:$secondary-text-color;
+                        font-size: $font-size-small;
 
                         &:hover {
                             color: black;
@@ -149,12 +151,12 @@
                     }
 
                 &.change{
-                    font-size: 14px;
+                    font-size: $font-size-small;
                     text-decoration: underline;
-                    color:  hsl(245, 75%, 52%);
+                    color: $primary-button-color;
 
                     &:hover{
-                        color:  hsla(245, 75%, 52%, 0.67);  
+                        color: $primary-button-hover;  
                     }
                 }
             }
