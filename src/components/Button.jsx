@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types'
 
-// const BtnStyle = style.button `color: `
-
-
 const Button = ({text, classname})=> {
   return (
 
