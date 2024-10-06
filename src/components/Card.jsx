@@ -17,8 +17,10 @@ const Card = () => {
             </p>
             <div className='plan'>
                 <img src={iconMusic} alt="" />
-                <span className='annual'>Annual Plan</span>
-                <span className='price'>$59.99/year </span>
+                <div className='plantext'>
+                <span >Annual Plan</span>
+                <span >$59.99/year </span>                   
+                </div>
                 <Button classname='change' text='Change'/>
             </div>
             <Button classname='btnpay' text="Proceed to Payment" />
