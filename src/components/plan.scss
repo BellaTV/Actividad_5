@@ -1,0 +1,38 @@
+@import '../styles/variables.scss';
+
+.plan {
+    display: flex;
+    align-items: center;
+    background-color:$tertiary-bg-color;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+
+    img {
+        margin-right: 10px;
+        height: 40px;
+    }
+
+    .plantext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+
+        span:first-child {
+            font-weight: $font-weight-black;
+            margin-right: auto;
+            margin-bottom: 2px;
+        }
+
+        span:last-child {
+            font-weight: $font-weight-regular;
+            margin-right: auto;
+            color: $secondary-text-color;
+        }
+    }
+}
